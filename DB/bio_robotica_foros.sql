@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS `foros`;
+CREATE TABLE `foros` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+LOCK TABLES `foros` WRITE;
+INSERT INTO `foros` VALUES (40,'Fondo anim2.jpg');
+UNLOCK TABLES;

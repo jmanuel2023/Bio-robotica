@@ -1,0 +1,658 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 800px) {
+    body{
+        font-size: 8px;
+    }
+
+    #Carrusel {
+        width: 100%;
+        height: 150px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #Carrusel-mov {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .carrusel-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: none; /* Ocultar todas las imágenes por defecto */
+    }
+
+    .carrusel-item.active {
+        display: block; /* Mostrar solo la imagen activa */
+    }
+
+    .carrusel-item img {
+        width: 100%;
+        height: 150px;
+    }
+
+    #prevButton, #nextButton {
+        position: absolute;
+        margin-top: 90px;
+        top: 10%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+        color: black;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    #prevButton {
+        left: 10px;
+    }
+
+    #nextButton {
+        right: 10px;
+    }
+
+    #historia{
+        padding: 50px;
+        border-radius:20%;
+    }
+
+    #editar-historia{
+        background-color: #B5BAC9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        text-align: center;
+        align-content: center;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding: 5px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #nueva_descripcion{
+        width: 90%;
+        height: 200px;
+    }
+
+    #nuevo_nombre{
+        width: 90%;
+        height: 20px;
+    }
+
+    #historia-bio{
+        padding: 15px;
+        background-color: #bdbdbd;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        text-align: justify;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #panel-fotos{
+        width: 100%;
+        height: 150px;
+        padding-top: 30px;
+        background: linear-gradient(#005B88, #148BCC);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #Foro{
+        width: 70%;
+        height: 120px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #cargar-imagen{
+        background-color: #B5BAC9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-left: 30%;
+        margin-right: 30%;
+        width: 40%;
+        text-align: center;
+        align-content: center;
+        margin-top: 20px;
+        padding: 5px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #cursos{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #curso-rojo{
+        justify-content:center;
+        background-color: #DBDBDB;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #Imagen-Curso, #Imagen-C{
+        border-radius: 10px;
+        width: 450px;
+        height: 200px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+    #info-curso1{
+        width: 500px;
+        height: 250px;
+        color: rgb(0, 0, 0);
+    }
+
+    #info-requisitos{
+        width: 500px;
+        height: 250px;
+        color: rgb(255, 255, 255);
+    }
+
+    #curso-azul{
+        justify-content:center;
+        background-color: #005B88;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #curso-azul, #curso-rojo{
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #caja_de_eventos{
+        padding: 0%;
+        margin: 0%;
+        flex: 1;
+    }
+
+    #eventos1, #eventos2{
+        padding: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+        height: auto;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #eventos1{
+        background: linear-gradient(#005B88, #148BCC);
+        color: white;
+    }
+
+    #eventos2{
+        background: linear-gradient(#929292, #bdbdbd);
+    }
+
+    #Imagen-Curso{
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        height: 250px;
+        width: 350px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #info{
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: justify;
+        width: 100px;
+    }
+
+    .h1{
+        font: oblique bold 120% cursive;
+    }
+
+    #gestion-imagenes {
+        background-color: #B5BAC9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        text-align: center;
+        align-content: center;
+        margin-top: 20px;
+        padding: 5px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #imagen-carrusel{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #gestion-eliminar{
+        padding: 0px;
+    }
+
+    #gestion-eliminar img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    #opciones-carrusel{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 1%;
+        width: 80px;
+        height: 20px;
+        font-size: 8px;
+    }
+
+    .btn2 {
+        border: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .primary {margin-left: 40%; background-color: #DBDBDB; border: 2px solid #005B88; color: rgb(0, 0, 0);}
+    .primary:hover {background: #005B88; color: #DBDBDB;}
+
+    .secondary {margin-left: 50%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .secondary:hover {background: #DBDBDB; color: #005B88;}
+
+    .eliminar {margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .eliminar:hover {background: #b60000; color: #ffffff;}
+
+    .nueva {margin-left: 20%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .nueva:hover {background: #DBDBDB; color: #005B88;}
+
+    .agregar {margin-left: 10%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .agregar:hover {background: #058b1b; color: #ffffff;}
+
+    .generico {margin-left: 0%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .generico:hover {background: #058b1b; color: #ffffff;}
+
+    .tres { margin-top: -120px; background-color: #005B88; border: 2px solid #DBDBDB;
+        color: rgb(255, 255, 255); padding: 10px 20px; z-index: 9999; }
+
+    .tres:hover {background: #DBDBDB; color: #005B88;}
+}
+
+@media only screen and (min-width: 801px) {
+
+    #logo2{
+        margin-bottom: 20px;
+    }
+
+    #Carrusel {
+        width: 100%;
+        height: 350px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #Carrusel-mov {
+        display: flex;
+        transition: transform 0.5s ease;
+}
+
+    .carrusel-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: none; /* Ocultar todas las imágenes por defecto */
+    }
+
+    .carrusel-item.active {
+        display: block; /* Mostrar solo la imagen activa */
+    }
+
+    .carrusel-item img {
+        width: 100%;
+        height: 350px;
+        overflow: hidden; /* Asegúrate de que esta propiedad está presente */
+    }
+
+    #prevButton, #nextButton {
+        position: absolute;
+        margin-top: 180px;
+        top: 20%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+        color: black;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    #prevButton {
+        left: 10px;
+    }
+
+    #nextButton {
+        right: 10px;
+    }
+
+    #historia{
+        padding: 50px;
+        border-radius:20%;
+    }
+
+    #editar-historia{
+        background-color: #B5BAC9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        text-align: center;
+        align-content: center;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding: 5px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #nueva_descripcion{
+        width: 90%;
+        height: 200px;
+    }
+
+    #nuevo_nombre{
+        width: 90%;
+        height: 20px;
+    }
+
+    #historia-bio{
+        padding: 40px;
+        background-color: #bdbdbd;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        text-align: justify;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #panel-fotos{
+        width: 100%;
+        height: 300px;
+        padding-top: 30px;
+        background: linear-gradient(#005B88, #148BCC);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #Foro{
+        width: 50%;
+        height: 270px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #cargar-imagen{
+        background-color: #B5BAC9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-left: 30%;
+        margin-right: 30%;
+        width: 40%;
+        text-align: center;
+        align-content: center;
+        margin-top: 20px;
+        padding: 5px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #cursos{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #curso-rojo{
+        justify-content:center;
+        background-color: #DBDBDB;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #Imagen-Curso, #Imagen-C{
+        border-radius: 10px;
+        width: 450px;
+        height: 200px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+    #info-curso1{
+        width: 500px;
+        height: 250px;
+        color: rgb(0, 0, 0);
+    }
+
+    #info-requisitos{
+        width: 500px;
+        height: 250px;
+        color: rgb(255, 255, 255);
+    }
+
+    #curso-azul{
+        justify-content:center;
+        background-color: #005B88;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #curso-azul, #curso-rojo{
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #caja_de_eventos{
+        padding: 0%;
+        margin: 0%;
+        flex: 1;
+    }
+
+    #eventos1, #eventos2{
+        padding: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+        height: auto;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #eventos1{
+        background: linear-gradient(#005B88, #148BCC);
+        color: white;
+    }
+
+    #eventos2{
+        background: linear-gradient(#929292, #bdbdbd);
+    }
+
+    #Imagen-Curso{
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        height: 250px;
+        width: 350px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #info{
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: justify;
+        width: 800px;
+    }
+
+    .h1{
+        font: oblique bold 120% cursive;
+    }
+
+    #gestion-imagenes {
+        background-color: #B5BAC9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        text-align: center;
+        align-content: center;
+        margin-top: 20px;
+        padding: 5px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #imagen-carrusel{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #gestion-eliminar{
+        padding: 0px;
+    }
+
+    #gestion-eliminar img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    #opciones-carrusel{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        border: none;
+        padding: 14px 28px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .btn2 {
+        border: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .primary {margin-left: 40%; background-color: #DBDBDB; border: 2px solid #005B88; color: rgb(0, 0, 0);}
+    .primary:hover {background: #005B88; color: #DBDBDB;}
+
+    .secondary {margin-left: 50%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .secondary:hover {background: #DBDBDB; color: #005B88;}
+
+    .eliminar {margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .eliminar:hover {background: #b60000; color: #ffffff;}
+
+    .nueva {margin-left: 20%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .nueva:hover {background: #DBDBDB; color: #005B88;}
+
+    .agregar {margin-left: 10%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .agregar:hover {background: #058b1b; color: #ffffff;}
+
+    .generico {margin-left: 0%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .generico:hover {background: #058b1b; color: #ffffff;}
+
+    .tres { margin-top: -200px; margin-left: -1050px; transform: translateX(-50%); background-color: #005B88; border: 2px solid #DBDBDB;
+        color: rgb(255, 255, 255); padding: 10px 20px; z-index: 9999; }
+
+    .tres:hover {background: #DBDBDB; color: #005B88;}
+}

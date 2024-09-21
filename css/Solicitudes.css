@@ -1,0 +1,222 @@
+@media only screen and (min-width: 801px) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-content {
+        flex: 1;
+    }
+    #Solicitudes{
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+    }
+    .content-table {
+        border-collapse: collapse;
+        background-color: #ffffff;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    .content-table thead tr {
+        background: linear-gradient(#005B88, #148BCC);
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+    }
+    .content-table th,
+    .content-table td {
+        padding: 12px 15px;
+    }
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+    .content-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    .content-table tbody tr:last-of-type {
+        border-bottom: 2px linear-gradient(#005B88, #148BCC);
+    }
+    .content-table tbody tr.active-row {
+        font-weight: bold;
+        color: linear-gradient(#005B88, #148BCC);
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 10px;
+        border: 3px solid #8d0000;
+        z-index: 1000;
+        background: linear-gradient(#005B88, #148BCC);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+
+    #motivo{
+        margin-top: 5px;
+    }
+
+    .btn2 {
+        border: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .generico {margin-left: 0%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .generico:hover {background: #058b1b; color: #ffffff;}
+
+    .ver-mas, .rechazar {
+        background-color: #005B88;
+        border: 2px solid #DBDBDB;
+        color: rgb(255, 255, 255);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+
+    .ver-mas:hover,
+    .ver-mas:active {
+        background-color: rgb(197, 197, 0); /* Cambia a color amarillo al pasar el cursor o al hacer clic */
+    }
+
+    .rechazar:hover,
+    .rechazar:active{
+        background-color: rgb(151, 0, 0);
+    }
+}
+@media only screen and (max-width: 800px) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-content {
+        flex: 1;
+    }
+    #Solicitudes{
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+    }
+    .content-table {
+        border-collapse: collapse;
+        background-color: #ffffff;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    .content-table thead tr {
+        background: linear-gradient(#005B88, #148BCC);
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+    }
+    .content-table th,
+    .content-table td {
+        padding: 12px 15px;
+    }
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+    .content-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    .content-table tbody tr:last-of-type {
+        border-bottom: 2px linear-gradient(#005B88, #148BCC);
+    }
+    .content-table tbody tr.active-row {
+        font-weight: bold;
+        color: linear-gradient(#005B88, #148BCC);
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 10px;
+        border: 3px solid #8d0000;
+        z-index: 1000;
+        background: linear-gradient(#005B88, #148BCC);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+
+    #motivo{
+        margin-top: 5px;
+    }
+
+    .btn2 {
+        border: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .generico {margin-left: 0%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .generico:hover {background: #058b1b; color: #ffffff;}
+
+    .ver-mas, .rechazar {
+        background-color: #005B88;
+        border: 2px solid #DBDBDB;
+        color: rgb(255, 255, 255);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+
+    .ver-mas:hover,
+    .ver-mas:active {
+        background-color: rgb(197, 197, 0); /* Cambia a color amarillo al pasar el cursor o al hacer clic */
+    }
+
+    .rechazar:hover,
+    .rechazar:active{
+        background-color: rgb(151, 0, 0);
+    }
+}

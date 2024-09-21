@@ -1,0 +1,29 @@
+{
+    "preguntas": [
+        {
+            "pregunta": "De una baraja estándar de 52 cartas, una carta se elige al azar. ¿Cuál es la probabilidad de que la carta seleccionada sea roja o una reina?",
+            "opciones": ["1. 1/13", "2. 1/6", "3. 1/4", "4. 1/2"],
+            "opcion_correcta": 4
+          },
+      {
+        "pregunta": "En una bolsa hay tres urnas etiquetadas como A, B y C. La urna A contiene 4 bolas rojas y 3 verdes, la urna B contiene 2 bolas rojas y 5 verdes, y la urna C contiene 3 bolas rojas y 4 verdes. Si seleccionas una urna al azar y luego sacas una bola de ella, ¿cuál es la probabilidad de sacar una bola roja?",
+        "opciones": ["1. 3/12", "2. 5/12", "3. 7/12", "4. 9/12"],
+        "opcion_correcta": 2
+      },
+      {
+        "pregunta": "En una ciudad, hay un 60% de probabilidad de que llueva el sábado y un 40% de probabilidad de que llueva el domingo. Además, si llueve el sábado, hay un 70% de probabilidad de que llueva el domingo. Si seleccionas un día al azar, ¿cuál es la probabilidad de que llueva?",
+        "opciones": ["1. 0.16", "2. 0.40", "3. 0.64", "4. 0.78"],
+        "opcion_correcta": 3
+      },
+      {
+        "pregunta": "En una clase de matemáticas, el 70% de los estudiantes estudian para el examen y el 80% de los que estudian pasan. Además, el 30% de los que no estudian también pasan. Si un estudiante es seleccionado al azar de la clase, ¿cuál es la probabilidad de que apruebe?",
+        "opciones": ["1. 0.70", "2. 0.76", "3. 0.82", "4. 0.90"],
+        "opcion_correcta": 2
+      },
+      {
+        "pregunta": "Si lanzas un dado justo de seis caras, ¿cuál es la probabilidad de que obtengas un número par o un número menor que 3?",
+        "opciones": ["1. 1/2", "2. 2/3", "3. 3/4", "4. 5/6"],
+        "opcion_correcta": 3
+      }
+    ]
+  }

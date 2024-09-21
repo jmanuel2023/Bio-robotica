@@ -1,0 +1,728 @@
+body {
+    background-image: url("../img/Fondo-p.jpg");
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#historia{
+    text-align: center;
+    flex: 1;
+}
+
+@media only screen and (max-width: 800px) {
+    body{
+        font-size: 9px;
+    }
+    #Encabezados{
+        background: linear-gradient(#005B88, #148BCC);
+        color: white;
+        padding: 30px;
+        margin-top: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        text-align: justify;
+    }
+
+    #editar-historia{
+        background-color: #B5BAC9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        text-align: center;
+        align-content: center;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding: 5px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #nueva_descripcion{
+        width: 90%;
+        height: 200px;
+    }
+
+    #nuevo_nombre{
+        width: 90%;
+        height: 20px;
+    }
+    #caja_de_eventos{
+        width: 100%;
+    }
+
+    #eventos1, #eventos2{
+        padding-top: 1%;
+        padding-bottom: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #eventos1{
+        background: linear-gradient(#005B88, #148BCC);
+        color: white;
+        height: auto;
+    }
+
+    #eventos2{
+        background: linear-gradient(#929292, #bdbdbd);
+        height: auto;
+    }
+
+    #eventos3{
+        background: linear-gradient(#929292, #bdbdbd);
+        width: 80%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 20px;
+    }
+
+    #Imagen-Curso{
+        border-radius: 10px;
+        margin-top: 5%;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        height: 50px;
+        width: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .ancho-200px {
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 290%;
+        height: 20px;
+    }
+
+    .ancho-2000px {
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 290%;
+        height: 120px;
+    }
+
+    .ancho-a200px {
+        width: 100%;
+        height: 20px;
+        padding: 0%;
+        margin-right: -50px;
+    }
+
+    .ancho-a2000px {
+        width: 100%;
+        height: 120px;
+        padding: 0%;
+        margin: 0%;
+        margin-right: -50px;
+    }
+
+    .ancho-300px {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        height: 20px;
+    }
+
+    .ancho-3000px {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        height: 120px;
+    }
+
+    .ancho-30000px {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 70%;
+    }
+
+    .ancho-a33{
+        width: 20px;
+    }
+
+    #info{
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: justify;
+        width: 90%;
+        font-size: 7.5px;
+    }
+
+    #caja_de_antecedentes{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #antecedente1, #antecedente2{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 1%;
+        padding-right: 1%;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        width: 40%;
+        height: auto;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+
+    #antecedente1{
+        background: linear-gradient(#005B88, #148BCC);
+        color: white;
+    }
+
+    #antecedente2{
+        background: linear-gradient(#929292, #bdbdbd);
+    }
+
+    #Imagen-Antecedente{
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        height: 50px;
+        width: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #Imagen-Curso{
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        height: 170px;
+        width: 170px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #infoA{
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: justify;
+        font-size: 8px;
+        width: 60%;
+    }
+
+    #detalle_docente{
+        display: flex;
+        background-color: #B5BAC9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        text-align: center;
+        align-content: center;
+        margin-top: 20px;
+        padding: 5px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #editor{
+        background-color: #B5BAC9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 80%;
+        text-align: center;
+        align-content: center;
+        margin-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #nombre_nuevo{
+        width: 100%;
+        height: 20px;
+    }
+
+    #informacion_nueva{
+        width: 100%;
+        height: 150px;
+    }
+
+    .btn2 {
+        border: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .btn3 {
+        border: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        width: 100px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .btn5 {
+        border: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        width: 200px;
+        height: 30px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .formulario_editar2{
+        margin-left: -50px;
+        padding: 0%;
+        width: 270px;
+    }
+
+    .generico {margin-left: 0%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .generico:hover {background: #058b1b; color: #ffffff;}
+
+    .eliminarD {margin-top: 0%; margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .eliminarD:hover {background: #b60000; color: #ffffff;}
+
+    .guardarD {margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .guardarD:hover {background: #058b1b; color: #ffffff;}
+
+    .AgregarD {background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .AgregarD:hover {background: #058b1b; color: #ffffff;}
+
+    .editarD {margin-top: 5%; margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .editarD:hover {background: #98a806; color: #ffffff;}
+
+    .eliminarA {margin-top: 0%; margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .eliminarA:hover {background: #b60000; color: #ffffff;}
+
+    .guardarA {margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .guardarA:hover {background: #058b1b; color: #ffffff;}
+
+    .AgregarA {background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .AgregarA:hover {background: #058b1b; color: #ffffff;}
+
+    .editarA {margin-top: 5%; margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .editarA:hover {background: #98a806; color: #ffffff;}
+
+    #bloque-fantasma{
+        width: 100%;
+        height: 25px;
+    }
+
+    #boque-final{
+        background-color: #2e2e2e;
+        padding-top: 10px;
+        width: 100%;
+        height: 50px;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+
+    #Encabezados{
+        background: linear-gradient(#005B88, #148BCC);
+        color: white;
+        padding: 30px;
+        margin-top: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        text-align: justify;
+    }
+
+    #editar-historia{
+        background-color: #B5BAC9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        text-align: center;
+        align-content: center;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding: 5px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #nueva_descripcion{
+        width: 90%;
+        height: 200px;
+    }
+
+    #nuevo_nombre{
+        width: 90%;
+        height: 20px;
+    }
+    #caja_de_eventos{
+        width: 100%;
+    }
+
+    #eventos1, #eventos2{
+        padding-top: 1%;
+        padding-bottom: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #eventos1{
+        background: linear-gradient(#005B88, #148BCC);
+        color: white;
+        height: 180px;
+    }
+
+    #eventos2{
+        background: linear-gradient(#929292, #bdbdbd);
+        height: 180px;
+    }
+
+    #eventos3{
+        background: linear-gradient(#929292, #bdbdbd);
+        width: 80%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 20px;
+    }
+
+    #Imagen-Curso{
+        border-radius: 10px;
+        margin-top: 5%;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        height: 200px;
+        width: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .ancho-200px {
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 290%;
+        height: 20px;
+    }
+
+    .ancho-2000px {
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 290%;
+        height: 120px;
+    }
+
+    .ancho-a200px {
+        width: 100%;
+        height: 20px;
+        padding: 0%;
+        margin-right: -50px;
+    }
+
+    .ancho-a2000px {
+        width: 100%;
+        height: 120px;
+        padding: 0%;
+        margin: 0%;
+        margin-right: -50px;
+    }
+
+    .ancho-300px {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        height: 20px;
+    }
+
+    .ancho-3000px {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        height: 120px;
+    }
+
+    .ancho-30000px {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 70%;
+    }
+
+    .ancho-a33{
+        width: 20px;
+    }
+
+    #info{
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: justify;
+        width: 90%;
+    }
+
+    #caja_de_antecedentes{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #antecedente1, #antecedente2{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 1%;
+        padding-right: 1%;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        width: 46%;
+        height: auto;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    #antecedente1{
+        background: linear-gradient(#005B88, #148BCC);
+        color: white;
+    }
+
+    #antecedente2{
+        background: linear-gradient(#929292, #bdbdbd);
+    }
+
+    #Imagen-Antecedente{
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        height: 190px;
+        width: 190px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #Imagen-Curso{
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        height: 200px;
+        width: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #infoA{
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: justify;
+        font-size: 12px;
+        width: 80%;
+    }
+
+    #detalle_docente{
+        display: flex;
+        background-color: #B5BAC9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        text-align: center;
+        align-content: center;
+        margin-top: 20px;
+        padding: 5px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #editor{
+        background-color: #B5BAC9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 80%;
+        text-align: center;
+        align-content: center;
+        margin-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #nombre_nuevo{
+        width: 100%;
+        height: 20px;
+    }
+
+    #informacion_nueva{
+        width: 100%;
+        height: 150px;
+    }
+
+    .btn2 {
+        border: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .btn3 {
+        border: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        width: 100px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .btn5 {
+        border: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        width: 200px;
+        height: 30px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .formulario_editar2{
+        margin-left: -50px;
+        padding: 0%;
+        width: 270px;
+    }
+
+    .generico {margin-left: 0%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .generico:hover {background: #058b1b; color: #ffffff;}
+
+    .eliminarD {margin-top: 0%; margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .eliminarD:hover {background: #b60000; color: #ffffff;}
+
+    .guardarD {margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .guardarD:hover {background: #058b1b; color: #ffffff;}
+
+    .AgregarD {background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .AgregarD:hover {background: #058b1b; color: #ffffff;}
+
+    .editarD {margin-top: 5%; margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .editarD:hover {background: #98a806; color: #ffffff;}
+
+    .eliminarA {margin-top: 0%; margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .eliminarA:hover {background: #b60000; color: #ffffff;}
+
+    .guardarA {margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .guardarA:hover {background: #058b1b; color: #ffffff;}
+
+    .AgregarA {background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .AgregarA:hover {background: #058b1b; color: #ffffff;}
+
+    .editarA {margin-top: 5%; margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .editarA:hover {background: #98a806; color: #ffffff;}
+
+    #bloque-fantasma{
+        width: 100%;
+        height: 25px;
+    }
+
+    #boque-final{
+        background-color: #2e2e2e;
+        padding-top: 10px;
+        width: 100%;
+        height: 50px;
+        color: white;
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "preguntas": [
+      {
+        "pregunta": "En un experimento, se tiene una densidad conjunta f(x, y) = 2x para 0 < x < 1 y 0 < y < 1. ¿Cuál es la densidad marginal de X?",
+        "opciones": ["1. f_X(x) = x^2", "2. f_X(x) = 2x^2", "3. f_X(x) = x", "4. f_X(x) = 2x"],
+        "opcion_correcta": 4
+      },
+      {
+        "pregunta": "Si la densidad conjunta f(x, y) de dos variables X e Y está dada por f(x, y) = 3xy para 0 < x < 1 y 0 < y < 2, ¿cuál es la densidad marginal de Y?",
+        "opciones": ["1. f_Y(y) = y", "2. f_Y(y) = 3y^2", "3. f_Y(y) = 3y", "4. f_Y(y) = 3y/2"],
+        "opcion_correcta": 3
+      },
+      {
+        "pregunta": "Si la densidad conjunta de tres variables X, Y y Z es f(x, y, z) = 6xyz para 0 < x < 1, 0 < y < 1 y 0 < z < 1, ¿cuál es la densidad marginal de Z?",
+        "opciones": ["1. f_Z(z) = z", "2. f_Z(z) = 6z^2", "3. f_Z(z) = 3z", "4. f_Z(z) = 6z"],
+        "opcion_correcta": 3
+      },
+      {
+        "pregunta": "Si la densidad conjunta f(x, y) de dos variables X e Y está dada por f(x, y) = 2xy para 0 < x < 1 y 0 < y < 1, ¿cuál es la densidad marginal de X?",
+        "opciones": ["1. f_X(x) = 2x", "2. f_X(x) = x^2", "3. f_X(x) = x", "4. f_X(x) = 2x^2"],
+        "opcion_correcta": 1
+      },
+      {
+        "pregunta": "Si la densidad conjunta f(x, y) de dos variables X e Y está dada por f(x, y) = 4xy para 0 < x < 1 y 0 < y < 1, ¿cuál es la densidad marginal de Y?",
+        "opciones": ["1. f_Y(y) = 2y", "2. f_Y(y) = y", "3. f_Y(y) = 4y^2", "4. f_Y(y) = 2y^2"],
+        "opcion_correcta": 1
+      }
+    ]
+  }

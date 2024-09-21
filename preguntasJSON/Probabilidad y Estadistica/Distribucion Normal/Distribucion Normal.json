@@ -1,0 +1,29 @@
+{
+    "preguntas": [
+      {
+        "pregunta": "Si una puntuación Z es igual a 1.5, ¿qué porcentaje de datos se encuentran por debajo de esta puntuación en una distribución normal estándar?",
+        "opciones": ["1. 6.68%", "2. 25.00%", "3. 93.32%", "4. 65.97%"],
+        "opcion_correcta": 3
+      },
+      {
+        "pregunta": "Si una distribución normal tiene una media de 50 y una desviación estándar de 10, ¿cuál es la probabilidad de que un valor aleatorio esté por encima de 60?",
+        "opciones": ["1. 0.1587", "2. 0.8413", "3. 0.1654", "4. 0.9085"],
+        "opcion_correcta": 1
+      },
+      {
+        "pregunta": "En una distribución normal estándar, ¿qué porcentaje de datos se encuentra dentro de ±1.96 desviaciones estándar de la media?",
+        "opciones": ["1. 68.26%", "2. 95.44%", "3. 97.50%", "4. 99.73%"],
+        "opcion_correcta": 2
+      },
+      {
+        "pregunta": "Si se sabe que el 70% de los datos en una distribución normal estándar se encuentran por debajo de cierto valor, ¿cuál es la puntuación Z correspondiente?",
+        "opciones": ["1. 0.5244", "2. 0.8413", "3. 1.0265", "4. 1.0364"],
+        "opcion_correcta": 4
+      },
+      {
+        "pregunta": "Si se toma una muestra de 100 observaciones de una población normalmente distribuida con una media de 50 y una desviación estándar de 10, ¿cuál es el intervalo de confianza al 95% para la media de la población?",
+        "opciones": ["1. 48.77 a 51.23", "2. 49.32 a 50.68", "3. 49.88 a 50.12", "4. 48.78 a 51.22"],
+        "opcion_correcta": 1
+      }
+    ]
+  }

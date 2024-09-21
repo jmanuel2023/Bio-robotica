@@ -1,0 +1,29 @@
+{
+    "preguntas": [
+      {
+        "pregunta": "¿Cuantas permutaciones diferentes se pueden hacer con las letras de la palabra HOLA?",
+        "opciones": ["1. 6", "2. 12", "3. 24", "4. 36"],
+        "opcion_correcta": 3
+      },
+      {
+        "pregunta": "Si tienes un candaddo de 4 digitos y no puedes repetir ningun numero,¿cuantas permutaciones diferentes de numeros posibles hay?",
+        "opciones": ["1. 12", "2. 24", "3. 60", "4. 120"],
+        "opcion_correcta": 2
+      },
+      {
+        "pregunta": "Si tienes 5 libros diferentes y deseas ordenarlos en un estante de una forma peculiar, ¿cuantas permutaciones diferentes de ordenacion puede hacer?",
+        "opciones": ["1. 5", "2. 20", "3. 60", "4. 120"],
+        "opcion_correcta": 4
+      },
+      {
+        "pregunta": "Si tomas un mazo estandar de 52 cartas y las mezclas,¿cuantas formas diferentes hay de ordenar las cartas?",
+        "opciones": ["1. 52", "2. 104", "3. 2652", "4. 52!"],
+        "opcion_correcta": 4
+      },
+      {
+        "pregunta": "Si tienes una lista de 7 elementos y deseas ordenarlos de todas las formas posibles, ¿cuantas permutaciones diferentes de ordenacion puedes obtener?",
+        "opciones": ["1. 7", "2. 42", "3. 5040", "4. 49"],
+        "opcion_correcta": 3
+      }
+    ]
+  }

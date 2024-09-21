@@ -1,0 +1,381 @@
+body {
+    background-image: url("../img/Fondo-p.jpg");
+    font-family: 'Raleway', sans-serif;
+}
+#blanco{
+    height: 10px;
+}
+@media only screen and (min-width: 801px) {
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-content {
+        flex: 1;
+    }
+    .tiempo{
+        font-size: 70px;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        word-spacing: 10px;
+    }
+
+    .tiempo2{
+        margin-left: 30px;
+        word-spacing: 100px;
+    }
+
+    #mas-informacion{
+        margin-left: 30%;
+        margin-right: 30%;
+        text-align: justify;
+        background-color: #bdbdbd;
+        border-radius: 20px;
+        padding: 2%;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #btn_mas {
+        border: none;
+        padding: 5px 12px;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: #DBDBDB;
+        border: 2px solid #005B88;
+        color: rgb(0, 0, 0);
+    }
+
+    #btn_mas:hover {
+        background: #005B88;
+        color: #DBDBDB;
+    }
+
+    #caja_de_eventos{
+        padding-left: 15%;
+        padding-right: 10%;
+
+    }
+
+    #eventos1, #eventos2{
+        padding: 5%;
+        width: 85%;
+        height: auto;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+
+    #eventos1{
+        background: linear-gradient(#005B88, #148BCC);
+        color: white;
+    }
+
+    #eventos2{
+        background: linear-gradient(#929292, #bdbdbd);
+    }
+
+    #Imagen-Curso{
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        height: 250px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #info{
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: justify;
+        width: 90%;
+    }
+
+    #eventos3{
+        background: linear-gradient(#929292, #bdbdbd);
+        width: 85%;
+        padding: 20px;
+        margin-left: 7%;
+        margin-right: 7%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .ancho-300px {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        height: 20px;
+    }
+
+    .ancho-3000px {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        height: 120px;
+    }
+
+    .ancho-30000px {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 100%;
+    }
+
+    .ancho-30003px {
+        margin-left: 5%;
+        margin-right: 80%;
+        width: 20%;
+    }
+
+    .btn3 {
+        border: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        width: 100px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .btn5 {
+        border: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        width: 200px;
+        height: 30px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .eliminarD {margin-top: 0%; margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .eliminarD:hover {background: #b60000; color: #ffffff;}
+
+    .guardarD {margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .guardarD:hover {background: #058b1b; color: #ffffff;}
+
+    .AgregarD {background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .AgregarD:hover {background: #058b1b; color: #ffffff;}
+
+    .editarD {margin-top: 5%; margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .editarD:hover {background: #98a806; color: #ffffff;}
+
+    #bloque-fantasma{
+        width: 100%;
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-content {
+        flex: 1;
+    }
+
+    #evento-proximo{
+        font-size: 15px;
+    }
+
+    .tiempo{
+        font-size: 40px;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        word-spacing: 5px;
+    }
+
+    .tiempo2{
+        margin-left: 5px;
+        word-spacing: 40px;
+    }
+
+    #mas-informacion{
+        margin-left: 30%;
+        margin-right: 30%;
+        text-align: justify;
+        background-color: #bdbdbd;
+        border-radius: 20px;
+        padding: 2%;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-size: 12px;
+    }
+
+    #btn_mas {
+        border: none;
+        padding: 5px 12px;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: #DBDBDB;
+        border: 2px solid #005B88;
+        color: rgb(0, 0, 0);
+    }
+
+    #btn_mas:hover {
+        background: #005B88;
+        color: #DBDBDB;
+    }
+
+    #caja_de_eventos{
+        padding-left: 15%;
+        padding-right: 10%;
+
+    }
+
+    #eventos1, #eventos2{
+        padding: 5%;
+        width: 85%;
+        height: auto;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+
+    #eventos1{
+        background: linear-gradient(#005B88, #148BCC);
+        color: white;
+    }
+
+    #eventos2{
+        background: linear-gradient(#929292, #bdbdbd);
+    }
+
+    #Imagen-Curso{
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        height: 180px;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #info{
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: justify;
+        width: 90%;
+        font-size: 12px;
+    }
+
+    #eventos3{
+        background: linear-gradient(#929292, #bdbdbd);
+        width: 85%;
+        padding: 20px;
+        margin-left: 7%;
+        margin-right: 7%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .ancho-300px {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        height: 20px;
+    }
+
+    .ancho-3000px {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        height: 120px;
+    }
+
+    .ancho-30000px {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 100%;
+    }
+
+    .ancho-30003px {
+        margin-left: 5%;
+        margin-right: 80%;
+        width: 20%;
+    }
+
+    .btn3 {
+        border: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        width: 100px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .btn5 {
+        border: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        width: 200px;
+        height: 30px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .eliminarD {margin-top: 0%; margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .eliminarD:hover {background: #b60000; color: #ffffff;}
+
+    .guardarD {margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .guardarD:hover {background: #058b1b; color: #ffffff;}
+
+    .AgregarD {background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .AgregarD:hover {background: #058b1b; color: #ffffff;}
+
+    .editarD {margin-top: 5%; margin-left: 5%; background-color: #005B88; border: 2px solid #DBDBDB; color: rgb(255, 255, 255);}
+    .editarD:hover {background: #98a806; color: #ffffff;}
+
+    #bloque-fantasma{
+        width: 100%;
+        height: 25px;
+    }
+}

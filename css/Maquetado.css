@@ -1,0 +1,591 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F0F1EC;
+}
+.h11{
+  margin-top: 0px;
+}
+#cabecera {
+  width: 100%;
+  height: 90px;
+}
+#pie {
+  width: 100%;
+  height: 100px;
+  background-color: #346dee;
+  margin-top: 10px;
+}
+.logoprincipal{
+  width:150px;
+  height:90px;
+  float: left;
+}
+.logoprincipalsecundario{
+  height:90px;
+  float: right;
+  margin-top:5px; 
+  margin-bottom: 0px;
+}
+#d1 {
+  background-color: #346dee;
+  width: 100%;
+  height: 90px;
+}
+
+#d2 {
+  background-color: grey;
+  width: 100%;
+  height: 8px;
+}
+
+#inductivo, #deductivo, #analogico, #heuristico{
+  width: 100%;
+}
+.in_der{
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.izq2, .izq3, .izq4, .izq5, .izq6, .izq7, .izq8, .izq9, .izq10, .izq11, .izq12, .izq13, .izq14, .izq15 {
+  background-color: lightblue;
+  color:gray;
+  width: 98%;
+  height: 55px;
+  margin-bottom: 5px;
+  display: none;
+  padding-left: 10px;
+}
+
+.izq3:hover, .izq4:hover, .izq5:hover, .izq6:hover, .izq7:hover, .izq8:hover, .izq9:hover,.izq10:hover,.izq11:hover,.izq12:hover,.izq13:hover,.izq14:hover,.izq15:hover {
+  color:black;
+}
+@media (min-width: 830px) and (max-width: 1630px){
+  #d6-container{
+    height: 575px;
+    width: 100%;
+    overflow-y: auto;
+  }
+  #cerrar-nav{
+    display: none;
+  }
+  #navegacion {
+    width: 100%;
+    height: 150px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+  }
+  
+  #d3 {
+    background-color: #346dee;
+    width: 50%;
+    height: 120px;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #principal {
+  width: 100%;
+  height: 600px;
+}
+div > #principal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#izquierda {
+  width: 30%;
+  float: left;
+  overflow-x: auto;  
+  position:absolute; 
+  height: 90%; 
+  padding-left: 0px;
+}
+
+#d4 {
+  background-color: gray;
+  width: 98%;
+  height: 55px;
+  margin-bottom: 0px;
+}
+
+#d5 {
+  background-color: #346dee;
+  width: 98%;
+  height: 55px;
+  margin-bottom: 5px;
+}
+
+.izq {
+  background-color: rgb(43, 72, 235);
+  color: blanchedalmond;
+  width: 98%;
+  height: 55px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.izq1 {
+  background-color: rgb(43, 72, 235);
+  color: blanchedalmond;
+  width: 98%;
+  height: 55px;
+  margin-bottom: 5px;
+  display: none;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#izq-inicial,
+#nuevo-nivel {
+
+  background-color: #555b68;
+}
+
+#derecha {
+  width: 68%;
+  height: 575px;
+  float: right;
+}
+
+
+#d6 {
+  width: 98%;
+  height: 575px;
+  padding: 1px;
+  border: 5px solid #346dee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y:auto;
+  overflow-x: hidden;
+}
+button { 
+  width: calc(100%-50px);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4285f4;
+  color: white;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #357ae8;
+}
+.titulo-formulario{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-top: 20px;
+  text-align: center;
+}
+label {
+  display:block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"], 
+textarea {
+  width: calc(100% - 50px);
+  padding: 5px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+textarea{
+  height: 100px;
+  resize: vertical;
+}
+input[type="submit"]{
+  width: calc(100%-50px);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4285f4;
+  color: white;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #357ae8;
+}
+.question, .option{
+  text-align: left;
+    border: 2px solid #84c5fe;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.option:hover{
+  background-color: #4285f4;
+}
+
+
+.cuestionario{
+  text-align: left;
+}
+input[type="radio"]{
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3498db;   
+  border-radius: 50%; 
+  outline: none;
+  margin-right: 10px; 
+  }
+  input[type="radio"]:checked {
+  background-color: #3498db; 
+  }
+  input[type="radio"]:focus {
+  box-shadow: 0 0 5px #3498db; 
+  }
+.pregunta{
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#ncurso {
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-size: 2.5em;
+  color: aliceblue;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.pizq{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 5px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:large;
+  font-weight: 900;
+}
+#titleizq{
+  color: aliceblue;
+}
+#subtitleizq{
+  color:gray;
+}
+.titulo{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 2.5rem;  
+  color: blanchedalmond;
+}
+.vid{
+  width: 95%;
+  height: auto;
+  align-self: center;
+}
+.doc{
+  width: 100%;
+  height: 100%;
+  align-self: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+th {
+  background-color: #4e6bff;
+  color: white;
+}
+tr:hover {
+  background-color: #e0e0e0;
+}
+}
+@media (max-width: 829px){
+  #navegacion {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #d1 {
+    background-color: #346dee;
+    width: 100%;
+    height: 70px;
+  }
+  
+  #d2 {
+    background-color: grey;
+    width: 100%;
+    height: 8px;
+  }
+
+  .logoprincipal{
+    width:65px;
+    height:60px;
+    float: left;
+  }
+  .logoprincipalsecundario{
+    height:50px;
+    float: right;
+    margin-top:10px; 
+    margin-bottom: 0px;
+  }
+  .titulo{
+    text-align: center;
+    font-size: 1.1rem;  
+    color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.h11{
+  margin-top: 10px;
+
+}
+  
+  #d3 {
+    background-color: #346dee;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #ncurso {
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    color: aliceblue;
+  }
+  .izq {
+    background-color: rgb(43, 72, 235);
+    color: blanchedalmond;
+    width: 100%;
+    height: 55px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #izq-inicial,
+#nuevo-nivel {
+  background-color: #555b68;
+}
+  .nav-bar{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #F0F1EC;
+    padding: 1rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    height: 100%; 
+  }
+  .nav-bar.visible{
+    opacity: 1;
+    visibility: visible;
+  }
+  #principal {
+    width: 100%;
+    height: 480px;
+  }
+  
+  #d4 {
+    background-color: gray;
+    width: 98%;
+    height: 55px;
+    margin-bottom: 5px;
+  }
+  
+  #d5 {
+    background-color: #346dee;
+    width: 98%;
+    height: 55px;
+    margin-bottom: 5px;
+  }
+  
+  .izq {
+    background-color: rgb(43, 72, 235);
+    color: blanchedalmond;
+    width: 98%;
+    height: 55px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .izq1 {
+    background-color: rgb(43, 72, 235);
+    color: blanchedalmond;
+    width: 200px;
+    height: 55px;
+    margin-bottom: 1px;
+    display: none;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #derecha {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+  #d6-container{
+    height: 400px;
+    overflow-y: auto;
+  }
+  #d6 {
+    width: 95%;
+    height: 370px;
+    border: 5px solid #346dee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+  }
+  .titulo-formulario{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    margin-top: 20px;
+    text-align: center;
+  }
+  label {
+    display:block;
+    margin-bottom: 5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"]
+  textarea {
+    width: calc(100% - 100px);
+    padding: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+  textarea{
+    height: 90px;
+    resize: vertical;
+  }
+  input[type="submit"]{
+    width: calc(100%-20px);
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4285f4;
+    color: white;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #357ae8;
+  }
+  .question, .option{
+    text-align: left;
+      border: 2px solid #84c5fe;
+      border-radius: 5px;
+      font-size: 17px;
+      cursor: pointer;
+  }
+  .option:hover{
+    background-color: #4285f4;
+  }
+  
+  
+  .cuestionario{
+    text-align: left;
+  }
+  input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3498db;   
+    border-radius: 50%; 
+    outline: none;
+    margin-right: 10px; 
+    }
+    input[type="radio"]:checked {
+    background-color: #3498db; 
+    }
+    input[type="radio"]:focus {
+    box-shadow: 0 0 5px #3498db; 
+    }
+  .pregunta{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .vid{
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+  .doc{
+    width: 100%;
+    height: 100%;
+    align-self: center;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  th {
+    background-color: #4e6bff;
+    color: white;
+  }
+  tr:hover {
+    background-color: #e0e0e0;
+  }
+  #pie {
+    width: 100%;
+    height: 50px;
+    background-color: #346dee;
+    margin-top: 25px;
+  }
+}
