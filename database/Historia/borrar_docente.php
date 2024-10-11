@@ -1,6 +1,6 @@
 <?php
 // Incluir archivo de conexión a la base de datos
-include '../../../Bio-Robotica/database/Conexion.php';
+include '../Conexion.php';
     // Verificar si se está intentando borrar un docente
     if(isset($_POST['borrar_docente'])){
         // Obtener el nombre del docente a borrar
@@ -18,25 +18,25 @@ include '../../../Bio-Robotica/database/Conexion.php';
             // Ejecutar la consulta de eliminación
             if ($conn->query($sql_delete) === TRUE) {
                 // Ruta de la imagen asociada al docente
-                $ruta_imagen = "../../../Bio-Robotica/img/Historia/Profesores/$imagen_docente";
+                $ruta_imagen = "../../img/Historia/Profesores/$imagen_docente";
 
                 // Verificar si la imagen existe y eliminarla
                 if(file_exists($ruta_imagen)){
                     unlink($ruta_imagen);
                 }
                 // Redirigir después de la eliminación exitosa
-                header("Location: ../../../../../Bio-Robotica/admin/Historia.php");
+                header("Location: ../../admin/Historia.php");
                 exit();
             } else {
                 // Manejar errores durante la eliminación en la base de datos
                 echo "Error al borrar el docente: " . $conn->error;
-                header("Location: ../../../../../Bio-Robotica/admin/Historia.php");
+                header("Location: ../../admin/Historia.php");
                 exit();
             }
         } else {
             // Manejar caso en el que no se encuentra el docente
             echo "No se encontró el docente a borrar.";
-            header("Location: ../../../../../Bio-Robotica/admin/Historia.php");
+            header("Location: ../../admin/Historia.php");
             exit();
         }
     }

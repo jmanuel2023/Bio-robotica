@@ -1,5 +1,5 @@
 <?php
-    include '../../../Bio-Robotica/database/Conexion.php';
+    include '../Conexion.php';
     if (isset($_POST['agregar_docente'])) {
         $nombre = $_POST['nombre_nuevo_docente'];
         $informacion = $_POST['informacion_nuevo_docente'];
@@ -12,7 +12,7 @@
             if (move_uploaded_file($temp_imagen, $directorio_destino . $nombre_imagen)) {
                 $sql = "INSERT INTO docentes (nombre, informacion, imagen) VALUES ('$nombre', '$informacion', '$nombre_imagen')";
                 if ($conn->query($sql) === TRUE) {
-                    header("Location: ../../../../../Bio-Robotica/admin/Historia.php");
+                    header("Location: ../..//admin/Historia.php");
                     exit();
                 } else {
                     echo "Error: " . $sql . "<br>" . $conn->error;

@@ -46,6 +46,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 // Redirigir de vuelta a la página principal después de la actualización
-header("Location: ../../../../../Bio-Robotica/admin/Materiales.php");
+header("Location: ../../../../../biorobotica2/admin/Materiales.php");
 exit();
 ?>

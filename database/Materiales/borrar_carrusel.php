@@ -32,6 +32,6 @@ if (isset($_POST['action']) && $_POST['action'] === 'delete' && isset($_POST['id
 }
 
 // Redirigir de vuelta a la página principal después de la eliminación
-header("Location: ../../../../../Bio-Robotica/admin/Materiales.php");
+header("Location: ../../../../../biorobotica2/admin/Materiales.php");
 exit();
 ?>

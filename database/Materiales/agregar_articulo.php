@@ -1,11 +1,11 @@
 <?php
-include '../../../Bio-Robotica/database/Conexion.php';
+include '../../../biorobotica2/database/Conexion.php';
 
 if (isset($_POST['agregar_articulo'])) {
     $nombre_pdf_file = $_FILES['nuevo_articulo']['name'];
     $nombre_imagen_file = $_FILES['imagen_nuevo_articulo']['name'];
-    $directorio_destino_pdf = "../../../Bio-Robotica/library/";
-    $directorio_destino_imagen = "../../../Bio-Robotica/library/img/";
+    $directorio_destino_pdf = "../../../biorobotica2/library/";
+    $directorio_destino_imagen = "../../../biorobotica2/library/img/";
 
     if (!empty($nombre_pdf_file) && !empty($nombre_imagen_file)) {
         $nombre_pdf = uniqid() . '_' . $nombre_pdf_file;
@@ -21,7 +21,7 @@ if (isset($_POST['agregar_articulo'])) {
 
             // Ejecutar la consulta
             if ($stmt->execute()) {
-                header("Location: ../../../../../Bio-Robotica/admin/Materiales.php");
+                header("Location: ../../../../../biorobotica2/admin/Materiales.php");
                 exit();
             } else {
                 echo "Error al ejecutar la consulta: " . $stmt->error;

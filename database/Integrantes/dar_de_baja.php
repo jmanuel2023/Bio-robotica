@@ -56,7 +56,7 @@ include '../Conexion.php';
                     // Envío del correo electrónico
                     $mail->send();
                     // Redirigir a otra página
-                    header("Location: ../../../../../Bio-Robotica/admin/Integrantes.php");
+                    header("Location: ../../admin/Integrantes.php");
                     exit();
                 } catch (Exception $e) {
                     echo "Error al enviar el correo electrónico: {$mail->ErrorInfo}";

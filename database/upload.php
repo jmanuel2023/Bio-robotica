@@ -15,8 +15,8 @@ require '../PHPMailer-master/src/SMTP.php';
 // Detalles de la conexión
 $servername = 'localhost';
 $username = 'root';
-$password = '030217';
-$dbname = 'bio_robotica';
+$password = '1234';
+$dbname = 'biorobotica';
 
 // Crear la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);

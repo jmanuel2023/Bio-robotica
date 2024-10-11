@@ -1,8 +1,8 @@
 <?php
-    include '../database/Conexion.php';
+    include '../../biorobotica2/database/Conexion.php';
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (!empty($_FILES["nueva_imagen"]["name"])) {
-            include '../database/Conexion.php';
+            include '../../biorobotica2/database/Conexion.php';
             $sql_delete = "DELETE FROM foros";
             if ($conn->query($sql_delete) === TRUE) {
                 $target_dir = "../img/Club/foro/";

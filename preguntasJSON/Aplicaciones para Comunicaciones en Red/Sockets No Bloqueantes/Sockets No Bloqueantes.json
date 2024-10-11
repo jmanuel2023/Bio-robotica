@@ -1,0 +1,44 @@
+{
+    "preguntas": [
+        {
+            "pregunta": "\u00bfPregunta 1?",
+            "opciones": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "opcion_correcta": 3
+        },
+        {
+            "pregunta": "\u00bfPregunta 2?",
+            "opciones": [
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "opcion_correcta": 3
+        },
+        {
+            "pregunta": "\u00bfPregunta 3?",
+            "opciones": [
+                "5",
+                "6",
+                "7",
+                "8"
+            ],
+            "opcion_correcta": 4
+        },
+        {
+            "pregunta": "\u00bfPregunta 4?",
+            "opciones": [
+                "4",
+                "5",
+                "4",
+                "3"
+            ],
+            "opcion_correcta": 3
+        }
+    ]
+}

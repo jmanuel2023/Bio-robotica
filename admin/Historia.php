@@ -284,7 +284,7 @@
                     <input type="text" name="nombre_nuevo_antecedente" placeholder="Nombre del antecedente" class="input-large ancho-300px" required>
                     <textarea name="informacion_nuevo_antecedente" placeholder="Información del antecedente" class="input-large ancho-3000px" required></textarea>
                     <input type="file" name="imagen_nuevo_antecedente" class="input-large ancho-30000px" required>
-                    <input type="submit" name="agregar_antecedente" class="btn5 AgregarD" value="Agregar Docente">
+                    <input type="submit" name="agregar_antecedente" class="btn5 AgregarD" value="Agregar Antecedente">
                 </div>
             </form>
         </div>
