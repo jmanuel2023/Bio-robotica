@@ -155,15 +155,15 @@ if (isset($_GET['cerrar_sesion'])) {
     <?php
         echo "<div id=\"caja_de_eventos\">";
         include '../database/Conexion.php';
-        $sql = "SELECT nombre_curso, nombre_curso, nombre_curso FROM cursos";
+        $sql = "SELECT nombre_curso, descripcion_curso , icono FROM cursos";
         $result = $conn->query($sql);
         $contador = 0;
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 $nombre = $row["nombre_curso"];
-                $descripcion = $row["nombre_curso"];
-                $nombre_imagen = $row["nombre_curso"];
-                $ruta_imagen = "../img/$nombre_imagen";
+                $descripcion = $row["descripcion_curso"];
+                $nombre_imagen = $row["icono"];
+                $ruta_imagen = "../docs/$nombre_imagen";
 
                 if ($contador % 2 != 0) {
                     echo "<div id=\"eventos1\">";

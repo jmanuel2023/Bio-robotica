@@ -9,11 +9,12 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
-
 @media only screen and (max-width: 800px) {
     #principal {
         height: calc(100vh - 100px);
@@ -21,7 +22,7 @@ body {
         padding-right: 10%;
         background-color: transparent;
         text-align: center;
-        flex: 1;
+        flex-grow: 1;
     }
     
     #mensaje{
@@ -48,7 +49,9 @@ body {
         width: 100%;
         height: 50px;
         color: white;
-        margin-bottom: 0px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
     }
     
     .btn {
@@ -70,6 +73,7 @@ body {
         padding-left: 20%;
         padding-right: 20%;
         background-color: transparent;
+        flex-grow: 1;
     }
     
     #mensaje{
@@ -100,7 +104,9 @@ body {
         width: 100%;
         height: 50px;
         color: white;
-        margin-bottom: 0px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
     }
     
     .btn {

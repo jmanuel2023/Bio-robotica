@@ -110,7 +110,7 @@ if (isset($_GET['cerrar_sesion'])) {
                         $documento_actividades = htmlspecialchars($row["documento_actividades"]);
                         $evaluacion = htmlspecialchars($row["evaluacion"]);
                         $documento_pdf = htmlspecialchars($row["documento_pdf"]);
-                        $ruta_imagen = "../img/icons/$icono";
+                        $ruta_imagen = "../docs/$icono";
 
                         echo "<div class=\"targeta-curso\" 
                                 data-curso=\"$nombre_curso\"
