@@ -1,5 +1,5 @@
 <?php
-include '../../../Bio-Robotica/database/Conexion.php';
+include '../../../biorobotica2/database/Conexion.php';
 
 if (isset($_POST['agregar_evento'])) {
     $nombre = $_POST['nombre_nuevo_evento'];
@@ -13,7 +13,7 @@ if (isset($_POST['agregar_evento'])) {
     $hora = $_POST['hora_nuevo_evento']; // Nueva variable para la hora
     $enlace = $_POST['enlace_nuevo_evento'];
 
-    $directorio_destino = "../../../Bio-Robotica/img/Eventos/";
+    $directorio_destino = "../../img/Eventos/";
 
     if (!empty($nombre_imagen)) {
         if (move_uploaded_file($temp_imagen, $directorio_destino . $nombre_imagen)) {
@@ -22,7 +22,7 @@ if (isset($_POST['agregar_evento'])) {
                     VALUES ('$nombre', '$informacion', '$fecha', '$direccion', '$hora', '$nombre_imagen', '$enlace')";
 
             if ($conn->query($sql) === TRUE) {
-                header("Location: ../../../../../Bio-Robotica/admin/Eventos.php");
+                header("Location: ../../admin/Eventos.php");
                 exit();
             } else {
                 echo "Error: " . $sql . "<br>" . $conn->error;

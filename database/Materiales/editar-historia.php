@@ -1,5 +1,5 @@
 <?php
-    include '../database/Conexion.php';
+    include '../../biorobotica2/database/Conexion.php';
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST['guardar_historia'])) {
             $nuevo_nombre = $_POST['nuevo_nombre'];
@@ -9,7 +9,7 @@
             $stmt_update->bind_param("sss", $nuevo_nombre, $nueva_descripcion, $categoria);
             $stmt_update->execute();
             $stmt_update->close();
-            header("Location: ../../../../../Bio-Robotica/admin/Materiales.php");
+            header("Location: ../../../../../biorobotica2/admin/Materiales.php");
             exit();
         }
     }

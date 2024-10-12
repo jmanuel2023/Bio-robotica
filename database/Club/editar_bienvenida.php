@@ -1,5 +1,5 @@
 <?php
-    include '../database/Conexion.php';
+    include '../../biorobotica2/database/Conexion.php';
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (isset($_POST['encabezado_club'])) {
                 $nuevo_nombre = $_POST['nuevo_nombre'];

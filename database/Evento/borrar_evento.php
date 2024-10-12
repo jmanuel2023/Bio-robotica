@@ -1,5 +1,5 @@
 <?php
-include '../../../Bio-Robotica/database/Conexion.php';
+include '../../../biorobotica2/database/Conexion.php';
 
 if(isset($_POST['borrar_evento'])){
     $id = $_POST['id'];
@@ -18,16 +18,16 @@ if(isset($_POST['borrar_evento'])){
             if(file_exists($ruta_imagen)){
                 unlink($ruta_imagen);
             }
-            header("Location: ../../../../../Bio-Robotica/admin/Eventos.php");
+            header("Location: ../../admin/Eventos.php");
             exit();
         } else {
             echo "Error al borrar el antecedente: " . $conn->error;
-            header("Location: ../../../../../Bio-Robotica/admin/Eventos.php");
+            header("Location: ../../admin/Eventos.php");
             exit();
         }
     } else {
         echo "No se encontró la información del antecedente.";
-        header("Location: ../../../../../Bio-Robotica/admin/Eventos.php");
+        header("Location: ../../admin/Eventos.php");
         exit();
     }
 }

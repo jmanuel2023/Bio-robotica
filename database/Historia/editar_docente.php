@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['editar_docente'])) {
-    include '../../../Bio-Robotica/database/Conexion.php';
+    include '../Conexion.php';
 
     $nombre_docente = $_POST['nombre_docente'];
     $nuevo_nombre = $_POST['nuevo_nombre'];
@@ -21,7 +21,7 @@ if (isset($_POST['editar_docente'])) {
             $nombre_imagen_anterior = $fila_imagen["imagen"];
 
             if (!empty($nombre_imagen_anterior)) {
-                $ruta_imagen_anterior = "../../../Bio-Robotica/img/Historia/Profesores/" . $nombre_imagen_anterior;
+                $ruta_imagen_anterior = "../../img/Historia/Profesores/" . $nombre_imagen_anterior;
                 if (file_exists($ruta_imagen_anterior)) {
                     unlink($ruta_imagen_anterior);
                 }
@@ -31,7 +31,7 @@ if (isset($_POST['editar_docente'])) {
         // Mover la nueva imagen a la carpeta de destino
         $nombre_imagen = $_FILES['nueva_imagen']['name'];
         $ruta_temporal = $_FILES['nueva_imagen']['tmp_name'];
-        $ruta_destino = "../../../Bio-Robotica/img/Historia/Profesores/" . $nombre_imagen;
+        $ruta_destino = "../../img/Historia/Profesores/" . $nombre_imagen;
 
         if (move_uploaded_file($ruta_temporal, $ruta_destino)) {
             $sql = "UPDATE docentes SET nombre=?, informacion=?, imagen=? WHERE nombre=?";
@@ -49,11 +49,11 @@ if (isset($_POST['editar_docente'])) {
 
     if ($stmt->execute()) {
         echo "Los datos del docente se actualizaron correctamente.";
-        header("Location: ../../../../../Bio-Robotica/admin/Historia.php");
+        header("Location: ../../admin/Historia.php");
         exit();
     } else {
         echo "Error al actualizar los datos del docente: " . $conn->error;
-        header("Location: ../../../../../Bio-Robotica/admin/Historia.php");
+        header("Location: ../../admin/Historia.php");
         exit();
     }
 

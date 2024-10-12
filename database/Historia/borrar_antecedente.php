@@ -1,5 +1,5 @@
 <?php
-include '../../../Bio-Robotica/database/Conexion.php';
+include '../Conexion.php';
 
 if(isset($_POST['borrar_antecedente'])){
     $nombre_antecedente = $_POST['nombre_antecedente'];
@@ -20,16 +20,16 @@ if(isset($_POST['borrar_antecedente'])){
             if(file_exists($ruta_imagen)){
                 unlink($ruta_imagen);
             }
-            header("Location: ../../../../../Bio-Robotica/admin/Historia.php");
+            header("Location: ../../admin/Historia.php");
             exit();
         } else {
             echo "Error al borrar el antecedente: " . $conn->error;
-            header("Location: ../../../../../Bio-Robotica/admin/Historia.php");
+            header("Location: ../../admin/Historia.php");
             exit();
         }
     } else {
         echo "No se encontró la información del antecedente.";
-        header("Location: ../../../../../Bio-Robotica/admin/Historia.php");
+        header("Location: ../../admin/Historia.php");
         exit();
     }
 }

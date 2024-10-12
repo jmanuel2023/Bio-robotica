@@ -2,7 +2,7 @@
 // Verificar si se ha enviado el formulario de edición
 if(isset($_POST['editar_antecedente'])) {
     // Incluir el archivo de conexión a la base de datos
-    include '../../../Bio-Robotica/database/Conexion.php';
+    include '../Conexion.php';
 
     // Obtener los datos del formulario
     $nombre_docente = $_POST['nombre_antecedente'];
@@ -23,11 +23,11 @@ if(isset($_POST['editar_antecedente'])) {
             // Manejar la carga de la nueva imagen
             $nombre_imagen = $_FILES['nueva_imagen2']['name'];
             $ruta_temporal = $_FILES['nueva_imagen2']['tmp_name'];
-            $ruta_destino = "../../../Bio-Robotica/img/Historia/Antecedentes/" . $nombre_imagen;
+            $ruta_destino = "../../img/Historia/Antecedentes/" . $nombre_imagen;
 
             // Eliminar la imagen anterior si existe
-            if (!empty($nombre_imagen_actual) && file_exists("../../../Bio-Robotica/img/Historia/Antecedentes/" . $nombre_imagen_actual)) {
-                unlink("../../../Bio-Robotica/img/Historia/Antecedentes/" . $nombre_imagen_actual);
+            if (!empty($nombre_imagen_actual) && file_exists("../../img/Historia/Antecedentes/" . $nombre_imagen_actual)) {
+                unlink("../../img/Historia/Antecedentes/" . $nombre_imagen_actual);
             }
 
             // Mover la nueva imagen a la carpeta de destino
@@ -48,7 +48,7 @@ if(isset($_POST['editar_antecedente'])) {
         if ($conn->query($sql_update) === TRUE) {
             // Redirigir después de la actualización exitosa
             $conn->close();
-            header("Location: ../../../../../Bio-Robotica/admin/Historia.php");
+            header("Location: ../../admin/Historia.php");
             exit();
         } else {
             // Manejar errores en la consulta SQL
@@ -64,7 +64,7 @@ if(isset($_POST['editar_antecedente'])) {
     }
 } else {
     // Si no se envió el formulario correctamente, redirigir de vuelta
-    header("Location: ../../../../../Bio-Robotica/admin/Historia.php");
+    header("Location: ../../admin/Historia.php");
     exit();
 }
 ?>

@@ -2,7 +2,7 @@
 // Verificar si se ha enviado el formulario de edición
 if (isset($_POST['editar_evento'])) {
     // Incluir el archivo de conexión a la base de datos
-    include '../../../Bio-Robotica/database/Conexion.php';
+    include '../../../biorobotica2/database/Conexion.php';
 
     // Obtener los datos del formulario (después de validar y limpiarlos)
     $nombre_evento = $_POST['nombre_evento'];
@@ -29,11 +29,11 @@ if (isset($_POST['editar_evento'])) {
             // Manejar la carga de la nueva imagen
             $nombre_imagen = $_FILES['nueva_imagen']['name'];
             $ruta_temporal = $_FILES['nueva_imagen']['tmp_name'];
-            $ruta_destino = "../../../Bio-Robotica/img/Eventos/" . $nombre_imagen;
+            $ruta_destino = "../../img/Eventos/" . $nombre_imagen;
 
             // Eliminar la imagen anterior si existe
-            if (!empty($nombre_imagen_actual) && file_exists("../../../Bio-Robotica/img/Eventos/" . $nombre_imagen_actual)) {
-                unlink("../../../Bio-Robotica/img/Eventos/" . $nombre_imagen_actual);
+            if (!empty($nombre_imagen_actual) && file_exists("../../img/Eventos/" . $nombre_imagen_actual)) {
+                unlink("../../img/Eventos/" . $nombre_imagen_actual);
             }
 
             // Mover la nueva imagen a la carpeta de destino
@@ -59,7 +59,7 @@ if (isset($_POST['editar_evento'])) {
             // Redirigir después de la actualización exitosa
             $stmt_update->close();
             $conn->close();
-            header("Location: ../../../../../Bio-Robotica/admin/Eventos.php");
+            header("Location: ../../admin/Eventos.php");
             exit();
         } else {
             // Manejar errores en la consulta SQL
@@ -76,7 +76,7 @@ if (isset($_POST['editar_evento'])) {
     }
 } else {
     // Si no se envió el formulario correctamente, redirigir de vuelta
-    header("Location: ../../../../../Bio-Robotica/admin/Eventos.php");
+    header("Location: ../../admin/Eventos.php");
     exit();
 }
 ?>

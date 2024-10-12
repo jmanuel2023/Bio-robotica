@@ -1,5 +1,5 @@
 <?php
-    include '../database/Conexion.php';
+   include '../../biorobotica2/database/Conexion.php';
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST['agregar_imagen'])) {
             $nombre_imagen = $_FILES['nueva_imagen']['name'];

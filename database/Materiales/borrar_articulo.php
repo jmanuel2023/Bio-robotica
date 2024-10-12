@@ -4,7 +4,7 @@ if (isset($_POST['borrar_articulo']) && isset($_POST['nombre_articulo'])) {
     $nombre_articulo = $_POST['nombre_articulo'];
 
     // Incluir el archivo de conexión a la base de datos
-    include '../../../Bio-Robotica/database/Conexion.php';
+    include '../../../biorobotica2/database/Conexion.php';
 
     // Consulta SQL para obtener el nombre de la imagen asociada al artículo
     $sql_select = "SELECT imagen FROM Biblioteca WHERE nombre = ?";
@@ -24,14 +24,14 @@ if (isset($_POST['borrar_articulo']) && isset($_POST['nombre_articulo'])) {
 
         // Si se encontró un nombre de imagen asociado al artículo, proceder con la eliminación
         if ($nombre_imagen) {
-            $ruta_imagen = "../../../Bio-Robotica/library/img/" . $nombre_imagen;
+            $ruta_imagen = "../../../biorobotica2/library/img/" . $nombre_imagen;
             if (file_exists($ruta_imagen)) {
                 unlink($ruta_imagen); // Borrar la imagen del sistema de archivos si existe
             }
         }
 
         if ($nombre_articulo) {
-            $ruta_imagen = "../../../Bio-Robotica/library/" . $nombre_articulo;
+            $ruta_imagen = "../../../biorobotica2/library/" . $nombre_articulo;
             if (file_exists($ruta_imagen)) {
                 unlink($ruta_imagen); // Borrar la imagen del sistema de archivos si existe
             }
@@ -48,7 +48,7 @@ if (isset($_POST['borrar_articulo']) && isset($_POST['nombre_articulo'])) {
                 // Borrado exitoso
                 echo "Artículo y archivos asociados borrados correctamente.";
                 // Redirigir a la página de lista de artículos
-                header("Location: ../../../../../Bio-Robotica/admin/Materiales.php");
+                header("Location: ../../../../../biorobotica2/admin/Materiales.php");
                 exit();
             } else {
                 // Error al ejecutar la consulta de eliminación
