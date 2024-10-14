@@ -10,12 +10,12 @@
 <body>
     <div id="principal">
         <div id ="mensaje">
-            <h1>Cuenta registrada con exito</h1>
-            <p>Te recomendamos que revises tu corre ya que ahí te mandaremos informacion sobre tu registro, ademas cuando tu correo sea validado se te avisara por ese medio.
+            <h1>Cuenta registrada con éxito</h1>
+            <p>Te recomendamos que revises tu correo ya que ahí te mandaremos información sobre tu registro, ademas cuando tu correo sea validado se te avisara por ese medio.
             Te esperamos en el salon 1008 al finalizar tu inscripcion.
             </p>
             <div id="Imagen-C"><img src="../img/Registro.png" alt="Imagen-Curso" id="Imagen"></div>
-            <a href = "../resource/Club.php"><button class="btn secondary">¡Deacuerdo!</button></a>
+            <a href = "../resource/Club.php"><button class="btn secondary">¡De acuerdo!</button></a>
         </div>
     </div>
     <div id="boque-final">

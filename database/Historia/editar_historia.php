@@ -1,5 +1,5 @@
 <?php
-    include '../../../biorobotica2/database/Conexion.php';
+ include '../database/Conexion.php';
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST['guardar_historia'])) {
             $nuevo_nombre = $_POST['nuevo_nombre'];

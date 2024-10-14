@@ -47,7 +47,7 @@ body {
         background-color: #2e2e2e;
         padding-top: 10px;
         width: 100%;
-        height: 50px;
+        height: 10px;
         color: white;
         position: fixed;
         bottom: 0;
@@ -101,7 +101,7 @@ body {
         text-align: center;
         background-color: #2e2e2e;
         padding-top: 10px;
-        width: 100%;
+        width: 50%;
         height: 50px;
         color: white;
         position: fixed;

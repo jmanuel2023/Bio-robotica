@@ -157,7 +157,7 @@
                     echo "<input type=\"submit\" name=\"borrar_evento\" class=\"btn3 eliminarD\" value=\"Borrar\">";
                     echo "</form>";
                     // Agregar formulario de edición
-                    echo "<form class=\"formulario_editar\" method=\"post\" action=\"../database/Historia/editar_evento.php\" enctype=\"multipart/form-data\">";
+                    echo "<form class=\"formulario_editar\" method=\"post\" action=\"../database/Evento/editar_evento.php\" enctype=\"multipart/form-data\">";
                     echo "<input type=\"hidden\" name=\"nombre_evento\" value=\"$nombre\">";
                     echo "<input type=\"text\" name=\"nuevo_nombre\" id=\"nuevo_nombre_$contador\" value=\"$nombre\" class=\"input-large ancho-200px\" style=\"display: none;\">";
                     echo "<textarea name=\"nueva_informacion\" id=\"nueva_informacion_$contador\" class=\"input-large ancho-2000px\" style=\"display: none;\">$descripcion</textarea>";
