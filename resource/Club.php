@@ -172,7 +172,7 @@ if (isset($_GET['cerrar_sesion'])) {
                     echo "<p>$descripcion</p>";
                     echo "<a href = \"./Materiales.php\"><button class=\"btn primary\">¡Saber más!</button></a>";
                     echo "</div>";
-                    echo "<div id=\"eventos\"><img src=\"$ruta_imagen.jpg\" alt=\"Imagen-Curso\" id=\"Imagen-Curso\"></div>";
+                    echo "<div id=\"eventos\"><img src=\"$ruta_imagen\" alt=\"Imagen-Curso\" id=\"Imagen-Curso\"></div>";
                     echo "</div>";
                 }else{
                     echo "<div id=\"eventos2\">";
